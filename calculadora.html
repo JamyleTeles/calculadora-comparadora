@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Calculadora de Comparadores</h1>
+    <h2>Autor: Jamyle Teles</h2>
+ 
+    <section class="num-1">
+    <label for="n1">Digite o primeiro número:</label>
+    <input type="number" placeholder="0" id="n1" />
+    </section>
+
+    <section class="comparador">
+    <label for="">Como quer comparar?</label>
+    <select name="" id="operador">
+      <option value="maiorque"> > </option>
+      <option value="menorque"> &lt </option>
+      <option value="maiorigual"> >= </option>
+      <option value="menorigual"> &lt= </option>
+      <option value="diferente"> != </option>
+      <option value="igual"> == </option>
+    </select>
+    </section>
+
+    <section class="num-2">
+    <label for="n2">Digite o segundo número:</label>
+    <input type="number" placeholder="0" id="n2" />
+    </section>
+
+    <section class="resultado">
+    <input type="button" value="=" onclick="calcular();" />
+    <input type="text" placeholder="0" id="result" disabled />
+    </section>
+ 
+
+    <script src="calculadora.js"></script>
+  </body>
+</html>
